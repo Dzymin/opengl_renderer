@@ -4,4 +4,8 @@ workspace "OpenglRenderer"
     configurations { "Debug", "Release" }
     platforms { "Windows" }
 
+group "Dependencies"
+include "Dependencies/GLFW"
+
+group ""
 include "App"

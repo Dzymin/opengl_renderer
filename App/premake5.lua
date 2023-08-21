@@ -11,6 +11,14 @@ project "App"
         "src/*.cpp"
     }
 
+    includedirs {
+        "%{wks.location}/Dependencies/GLFW/include"
+    }
+
+    links {
+        "GLFW"
+    }
+
     pchheader "pch.h"
     pchsource "src/pch.cpp"
 
