@@ -6,6 +6,7 @@ workspace "OpenglRenderer"
 
 group "Dependencies"
 include "Dependencies/GLFW"
+include "Dependencies/glad"
 
 group ""
 include "App"

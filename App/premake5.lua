@@ -12,11 +12,15 @@ project "App"
     }
 
     includedirs {
-        "%{wks.location}/Dependencies/GLFW/include"
+        "%{wks.location}/Dependencies/GLFW/include",
+        "%{wks.location}/Dependencies/glad/include",
+        "src/"
     }
 
     links {
-        "GLFW"
+        "GLFW",
+        "glad",
+        "opengl32.lib"
     }
 
     pchheader "pch.h"
