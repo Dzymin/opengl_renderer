@@ -1,1 +1,8 @@
 Premake/**
+bin/**
+obj/**
+.vs/**
+
+*.sln
+*.vcxproj
+*.vcxproj.user
