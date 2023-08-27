@@ -14,12 +14,14 @@ project "App"
     includedirs {
         "%{wks.location}/Dependencies/GLFW/include",
         "%{wks.location}/Dependencies/glad/include",
+        "%{wks.location}/Dependencies/stb/include",
         "src/"
     }
 
     links {
         "GLFW",
         "glad",
+        "stb",
         "opengl32.lib"
     }
 
