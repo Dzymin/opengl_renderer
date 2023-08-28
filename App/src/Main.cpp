@@ -146,6 +146,7 @@ int main()
 
     uint32_t texture;
     glGenTextures(1, &texture);
+    glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, texture);
 
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
@@ -168,6 +169,7 @@ int main()
 
     Shader basicShader("res/Shaders/Basic.vertex", "res/Shaders/Basic.fragment");
     basicShader.Bind();
+    basicShader.SetUniform1i("sampler", 0);
 
     while (!glfwWindowShouldClose(window))
     {
